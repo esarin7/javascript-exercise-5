@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Prompt|Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise day 5</title>
+</head>
+<body>
+
+<div class="wrapper">
+    
+<header>
+   
+<h1>World History Trivia</h1>
+      
+</header>
+
+<main>
+   
+
+    
+    <form onsubmit = "return validateForm()" class="quiz" id="myQuiz" name=myQuiz>
+        
+    <div class = "question A">
+        <legend>In which year did the demolition of the Berlin Wall begin?</legend>
+        
+        <div>
+            <input type="radio" id="yearOne" name="year" value="yearOne" />
+            <label for="yearOne">1989</label>
+        </div>
+
+        <div>
+            <input type="radio" id="yearTwo" name="year" value="yearTwo" />
+            <label for="yearTwo">1991</label>
+        </div>
+
+        <div>
+            <input type="radio" id="yearThree" name="year" value="yearThree" />
+            <label for="yearThree">1984</label>
+    </div><br>
+    
+    <div class = "question B">
+        <legend>What pandemic killed over one percent of the world’s population in 1918?</legend>
+        
+        <div>
+            <input type="radio" id="typhoid" name="disease" value="typhoid" />
+            <label for="typhoid">Typhoid</label>
+        </div>
+
+        <div>
+            <input type="radio" id="flu" name="disease" value="flu" />
+            <label for="flu">Spanish flu</label>
+        </div>
+
+        <div>
+            <input type="radio" id="plague" name="disease" value="plague" />
+            <label for="plague">Bubonic plague</label>
+        </div>
+    </div><br>
+           
+    <div class = "question C">
+        <legend>What is the name of the oldest known recorded story in the world?</legend>
+        <label for="answer">Answer:</label>
+        <input type="text" id="story" required name="story"><br>
+    </div><br>
+
+    <div class = "question D">
+        <legend>Who was the founder of modern nursing?</legend>
+        <label for="answer">Answer:</label>
+        <input type="text" id="nurse" required name="nurse"><br>
+    </div><br>
+
+    <div class = "question E">
+
+        <legend>This person successfully developed the first printing press.</legend>
+
+        <div>
+            <input type="checkbox" id="kepler" name="male" value="kepler" />
+            <label for="kepler">Johannes Kepler</label>
+        </div>
+
+        <div>
+                <input type="checkbox" id="luther" name="male" value="luther" />
+                <label for="luther">Martin Luther</label>
+            </div>
+
+        <div>
+            <input type="checkbox" id="gutenberg" name="male" value="gutenberg"/>
+            <label for="gutenberg">Johannes Gutenberg</label>
+        </div>
+    </div><br>
+
+    <div class = "question F">
+
+        <legend>This person conquered the Inca empire.</legend>
+
+        <div>
+            <input type="checkbox" id="cortes" name="conquistador" value="cortes" />
+            <label for="cortes">Hernán Cortés</label>
+        </div>
+
+        <div>
+                <input type="checkbox" id="pizarro" name="conquistador" value="pizarro" />
+                <label for="pizarro">Francisco Pizarro</label>
+            </div>
+
+        <div>
+            <input type="checkbox" id="balboa" name="conquistador" value="balboa"/>
+            <label for="balboa">Vasco Nuñez de Balboa</label>
+        </div>
+    </div><br>
+<div class="submit">
+    <input type=submit name="quizButton">
+</div>
+
+<div>
+    <p id="score"></p>
+</div>
+   
+
+</form>
+
+</main>
+</div>
+
+
+ 
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
